@@ -61,6 +61,9 @@ end
 def add_s(array)
 
   array.each_with_index.collect do |word, index|
-    index[0,2,3] << 's' 
+    if index[0,2,3] 
+      word << 's' 
+    else index[2]
+      word
   end
 end
