@@ -62,7 +62,7 @@ def add_s(array)
 
   array.each_with_index.collect do |word, index|
     word << 's'
-    word[2].delete
+    word[2].pop
       word
   end
 end
