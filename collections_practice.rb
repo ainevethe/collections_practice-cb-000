@@ -61,7 +61,7 @@ end
 def add_s(array)
 
   array.each_with_index.collect do |word, index|
-    while word[index] != 2
+    if word[index] != 2
       word << 's'
       word
     end
